@@ -1,0 +1,244 @@
+/* from http://yui.yahooapis.com/2.6.0/build/reset/reset-min.css */
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}img{border:0}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+
+body {
+	padding: 2.5em 1em 0 1em;
+	line-height: 1.5em;
+}
+
+h1, h2, h3 {
+	margin: .5em 0 .5em;
+	padding-bottom: 0.3em;
+	border-bottom: thin solid black;
+}
+
+table {
+	border-collapse: collapse;
+}
+th {
+	color: white;
+	background-color: #356F0D;
+	text-align: left;
+}
+th, td {
+	padding: .1em .5em;
+}
+form th {
+	text-align: right;
+	vertical-align: top;
+}
+
+img {
+	vertical-align: middle;
+	border: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	color: black;
+	background-color: #ffffc0;
+}
+
+.pagination {
+	margin: 0 auto 1em;
+	font-size: 90%;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.pagination ul,
+.pagination li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+.pagination a,
+.pagination .selected {
+	padding: .15em .35em;
+	border: thin solid #356F0D;
+	-moz-border-radius: .3em;
+	-webkit-border-radius: .3em;
+	border-radius: .3em;
+	color: black;
+	background-color: white;
+	text-decoration: none;
+}
+.pagination a:hover,
+.pagination a:active,
+.pagination .selected {
+	color: white;
+	background-color: #356F0D;
+}
+
+.odd {
+	color: black;
+	background-color: white;
+}
+.even {
+	color: black;
+	background-color: #E6EFE0;
+}
+
+#content {
+	float: left;
+	margin-bottom: 2em;
+	min-height: 30em;
+	max-width: 55em;
+}
+
+#sitename {
+	position: absolute;
+	top: .3em;
+	left: 1em;
+	font-size: 1.1em;
+	font-weight: bold;
+	font-variant: small-caps;
+	letter-spacing: .15em;
+	text-shadow: .1em .1em .1em #ddd;
+}
+#sitename p {
+	float: left;
+	border-bottom: thin solid silver;
+}
+#sitename a {
+	color: black;
+	background-color: white;
+	text-decoration: none;
+}
+
+#search {
+	position: absolute;
+	top: .5em;
+	right: 1em;
+}
+#search h2 {
+	display: none;
+}
+#search label {
+	color: #666;
+	background-color: white;
+	margin-right: .3em;
+}
+#q {
+	width: 12.5em;
+}
+#q:focus {
+	width: 20em;
+	font-size: 1.3em;
+}
+input,
+select,
+textarea {
+	padding: .1em .3em;
+	border: .3ex solid #356F0D;
+	-moz-border-radius: .5em;
+	-webkit-border-radius: .5em;
+	border-radius: .5em;
+	width: 25em;
+}
+input[type=submit] {
+	padding: 0 .2em;
+	width: auto;
+	color: white;
+	background-color: #356F0D;
+}
+input[type=submit]:focus {
+	background-color: #193F00;
+}
+
+.box {
+	float: right;
+	margin: 0 0 1em 1em;
+	padding: .7em;
+	width: 14em;
+	/*border: thin solid #a0a0a0;*/
+	-moz-border-radius: .5em;
+	-webkit-border-radius: .5em;
+	border-radius: .5em;
+}
+.box h2 {
+	font-size: 1.3em;
+}
+.box li {
+	list-style-type: none;
+	line-height: 1.6em;
+}
+.box a {
+	text-decoration: none;
+}
+.box a:hover {
+	text-decoration: underline;
+}
+
+#dictionaries {
+	color: black;
+	background-color: #B9EF95;
+}
+#cultures {
+	color: black;
+	background-color: #E6EF95;
+}
+#feedback {
+	color: black;
+	background-color: #EFCE95;
+}
+
+#footer {
+	clear: both;
+	margin: 2em 0 1em;
+	padding: 0.2em 0;
+	border-width: thin 0;
+	border-style: solid;
+	border-color: #063;
+	font-size: 90%;
+	text-align: center;
+}
+#footer h2 {
+	display: none;
+}
+#footer li {
+	list-style-type: none;
+	margin: 0 1.2em;
+}
+
+.wp {
+	padding-right: 1.3em;
+	background-image: url(images/wikipedia-link.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	text-decoration: none;
+}
+
+.hilite {
+	background-color: #FF6;
+}
+
+.active {
+	font-weight: bold;
+}
+
+.lang {
+	text-transform: capitalize;
+	font-variant: small-caps;
+}
+.letter {
+	text-transform: uppercase;
+}
+
+.no-items {
+	padding-left: 1.5em;
+	color: black;
+	background: white url(images/delete.png) no-repeat center left;
+	font-weight: bold;
+}
+
+.error,
+.error_list li {
+	padding-left: 1.5em;
+	color: black;
+	background: white url(images/error.png) no-repeat center left;
+	font-weight: bold;
+}
+.error_list li {
+	list-style-type: none;
+}

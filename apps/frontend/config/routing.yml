@@ -1,0 +1,50 @@
+search:
+  url:   /:sf_culture/search/:query
+  param: { module: main, action: search, query: ~ }
+
+feedback:
+  url:   /:sf_culture/feedback
+  param: { module: feedback, action: index }
+
+feedback_thankyou:
+  url:   /:sf_culture/feedback/thankyou
+  param: { module: feedback, action: thankyou }
+
+main_list:
+  url:   /:sf_culture/:dict/:letter
+  param:
+    module:    main
+    action:    list
+    sf_format: html
+  requirements:
+    dict: ..-..
+
+main_list_index:
+  url:   /:sf_culture/:dict/
+  param:
+    module:    main
+    action:    list
+    sf_format: html
+  requirements:
+    dict: ..-..
+
+homepage:
+  url:   /:sf_culture/
+  param: { module: main, action: index, sf_format: html }
+
+homepage_noculture:
+  url:   /
+  param: { module: main, action: index, sf_culture: en, sf_format: html }
+
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# generic rules
+
+# default_index:
+#   url:   /:module
+#   param: { action: index }
+
+# default:
+#   url:   /:module/:action/*

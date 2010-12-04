@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+<file source-language="EN" target-language="de" datatype="plaintext" original="messages" date="2009-12-23T18:02:42Z" product-name="messages">
+	<header/>
+	<body>
+	<trans-unit>
+		<source>Math dictionary</source>
+		<target>Mathematisches Wörterbuch</target>
+	</trans-unit>
+	<trans-unit>
+		<source>Footer</source>
+		<target>Fußzeile</target>
+	</trans-unit>
+	<trans-unit>
+		<source>This information is supplied in the hope that it will be useful, but WITHOUT ANY WARRANTY of accuracy or completeness.</source>
+		<target>Diese Information wird in der Hoffnung bereitgestellt, dass sie nützlich ist, jedoch OHNE JEGLICHE GARANTIE für Genauigkeit oder Vollständigkeit.</target>
+	</trans-unit>
+	<trans-unit>
+		<source>Site license</source>
+		<target>&lt;span property="dct:title"&gt;Dieses mathemathische Wörterbuch&lt;/span&gt; ist gemeinfrei.</target>
+	</trans-unit>
+	<trans-unit>
+		<source>All</source>
+		<target>Alle</target>
+	</trans-unit>
+	<trans-unit>
+		<source>No words were found.</source>
+		<target>Es wurden keine Wörter gefunden.</target>
+	</trans-unit>
+	<trans-unit>
+		<source>Search results for $1</source>
+		<target>Suchergebnisse für $1</target>
+	</trans-unit>
+	<trans-unit>
+		<source>Dictionaries</source>
+		<target>Wörterbucher</target>
+	</trans-unit>
+	<trans-unit>
+		<source>Search</source>
+		<target>Suche</target>
+	</trans-unit>
+	<trans-unit>
+		<source>Search through the dictionaries</source>
+		<target>Die Wörterbucher dursuchen</target>
+	</trans-unit>
+	<trans-unit>
+		<source>Change language</source>
+		<target>Sprache wechseln</target>
+	</trans-unit>
+	<trans-unit>
+		<source>This is a little free math dictionary. You can use it for whatever you want. :-)</source>
+		<target>Das ist ein kleines, freies mathemathisches Wörterbuch. Sie können es für alles Mögliche benutzen. :-)</target>
+	</trans-unit>
+	<trans-unit>
+		<source>Built with %symfony% and %doctrine%</source>
+		<target>Erstellt mit %symfony% und %doctrine%</target>
+	</trans-unit>
+	<trans-unit>
+		<source>Search query should not be empty.</source>
+		<target>Die Suchabfrage soll nicht leer sein.</target>
+	</trans-unit>
+	<trans-unit>
+		<source>You have specified an invalid dictionary.</source>
+		<target>Sie haben ein nicht existierendes Worterbuch ausgewählt.</target>
+	</trans-unit>
+	<trans-unit>
+		<source>Feedback</source>
+		<target>Ihr Kommentar</target>
+	</trans-unit>
+	<trans-unit>
+		<source>Send</source>
+		<target>Senden</target>
+	</trans-unit>
+	<trans-unit>
+		<source>Name</source>
+		<target>Name</target>
+	</trans-unit>
+	<trans-unit>
+		<source>E-mail</source>
+		<target>E-Mail</target>
+	</trans-unit>
+	<trans-unit>
+		<source>Comment</source>
+		<target>Kommentar</target>
+	</trans-unit>
+	<trans-unit>
+		<source>The email address is invalid.</source>
+		<target>Die angegebene E-Mail-Adresse ist ungültig.</target>
+	</trans-unit>
+	<trans-unit>
+		<source>The comment field is required.</source>
+		<target>Es ist erforderlich, einen Kommentar zu schreiben.</target>
+	</trans-unit>
+	<trans-unit>
+		<source>The comment must be of %min_length% characters at least.</source>
+		<target>Der Kommentar muss mindestens %min_length% Zeichen enthalten.</target>
+	</trans-unit>
+	<trans-unit>
+		<source>Thank you for your feedback.</source>
+		<target>Vielen Dank für Ihren Kommentar.</target>
+	</trans-unit>
+	</body>
+</file>
+</xliff>

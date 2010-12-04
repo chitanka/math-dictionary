@@ -1,0 +1,106 @@
+detect_relations: true
+
+Word:
+  columns:
+    id:            { type: integer(2), primary: true, autoincrement: true }
+    name:          string(160)
+    wp_article:    string(160)
+  indexes:
+    name:
+      fields:      [name]
+
+BgWord:
+  inheritance:
+    type:          concrete
+    extends:       Word
+  relations:
+    DeWords:
+      foreignAlias: BgWords
+      class:        DeWord
+      refClass:     BgDeRelation
+      local:        from_word_id
+      foreign:      id
+    EnWords:
+      foreignAlias: BgWords
+      class:        EnWord
+      refClass:     BgEnRelation
+      local:        from_word_id
+      foreign:      id
+
+DeWord:
+  inheritance:
+    type:          concrete
+    extends:       Word
+  relations:
+    BgWords:
+      foreignAlias: DeWords
+      class:        BgWord
+      refClass:     BgDeRelation
+      local:        to_word_id
+      foreign:      id
+    EnWords:
+      foreignAlias: DeWords
+      class:        EnWord
+      refClass:     DeEnRelation
+      local:        from_word_id
+      foreign:      id
+
+EnWord:
+  inheritance:
+    type:          concrete
+    extends:       Word
+  relations:
+    BgWords:
+      foreignAlias: EnWords
+      class:        BgWord
+      refClass:     BgEnRelation
+      local:        to_word_id
+      foreign:      id
+    DeWords:
+      foreignAlias: EnWords
+      class:        DeWord
+      refClass:     DeEnRelation
+      local:        to_word_id
+      foreign:      id
+
+
+Relation:
+  columns:
+    from_word_id:    { type: integer(2), primary: true }
+    to_word_id:      { type: integer(2), primary: true }
+
+BgDeRelation:
+  inheritance:
+    type:          concrete
+    extends:       Relation
+  relations:
+    BgWord:
+      local:        from_word_id
+      foreignAlias: BgDeRelations
+    DeWord:
+      local:        to_word_id
+      foreignAlias: BgDeRelations
+
+BgEnRelation:
+  inheritance:
+    type:          concrete
+    extends:       Relation
+  relations:
+    BgWord:
+      local:        from_word_id
+      foreignAlias: BgEnRelations
+    EnWord:
+      local:        to_word_id
+      foreignAlias: BgEnRelations
+
+DeEnRelation:
+  inheritance:
+    type:          concrete
+    extends:       Relation
+  relations:
+    DeWord:
+      local:        from_word_id
+      foreignAlias: DeEnRelations
+    EnWord:
+      local:        to_word_id
+      foreignAlias: DeEnRelations

@@ -1,0 +1,17 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/12-Filters
+
+rendering: ~
+security:  ~
+
+supercache:
+  class: sfSuperCacheFilter
+  param:
+    cache_dir: cache
+    with_host: false
+    check_lifetime: false
+
+# insert your own filters here
+
+cache:     ~
+execution: ~

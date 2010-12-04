@@ -1,0 +1,14 @@
+index:
+  enabled:     on
+  with_layout: true
+  lifetime:    86400
+
+list:
+  enabled:     on
+  with_layout: true
+  lifetime:    86400
+
+search:
+  enabled:     on
+  with_layout: true
+  lifetime:    86400

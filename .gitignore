@@ -1,0 +1,12 @@
+config/databases.yml
+apps/frontend/config/settings.yml
+apps/frontend/config/app.yml
+apps/frontend/config/factories.yml
+cache/*
+log/*
+plugins/.*
+web/cache/*
+web/sf
+web/uploads/*
+*.yml~
+!.gitignore
