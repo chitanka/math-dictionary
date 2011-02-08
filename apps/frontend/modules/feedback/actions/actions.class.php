@@ -40,11 +40,15 @@ class feedbackActions extends sfActions
 		if ('' == $data['name']) $data['name'] = 'Anonymous';
 		if ('' == $data['email']) $data['email'] = 'anon@anon.net';
 
-		$this->getMailer()->composeAndSend(
-			array($data['email'] => $data['name']),
-			sfConfig::get('app_admin_email'),
-			'Feedback from math dictionary',
-			$data['message']
-		);
+		$sender = array($data['email'] => $data['name']);
+		$message = Swift_Message::newInstance()
+			->setFrom($sender)
+			->setTo(sfConfig::get('app_admin_email'))
+			->setSubject('Feedback from math dictionary')
+			->setBody($data['message']);
+		$headers = $message->getHeaders();
+		$headers->addMailboxHeader('Reply-To', $sender);
+
+		$this->getMailer()->send($message);
 	}
 }
