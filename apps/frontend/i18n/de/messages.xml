@@ -100,6 +100,10 @@
 		<source>Thank you for your feedback.</source>
 		<target>Vielen Dank für Ihren Kommentar.</target>
 	</trans-unit>
+	<trans-unit>
+		<source>In other formats</source>
+		<target>In andere Formate</target>
+	</trans-unit>
 	</body>
 </file>
 </xliff>

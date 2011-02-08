@@ -11,7 +11,7 @@ feedback_thankyou:
   param: { module: feedback, action: thankyou }
 
 main_list:
-  url:   /:sf_culture/:dict/:letter
+  url:   /:sf_culture/:dict/:letter.:sf_format
   param:
     module:    main
     action:    list

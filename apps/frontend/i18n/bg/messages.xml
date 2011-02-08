@@ -104,6 +104,10 @@
 		<source>Thank you for your feedback.</source>
 		<target>Благодаря ви за коментара.</target>
 	</trans-unit>
+	<trans-unit>
+		<source>In other formats</source>
+		<target>В други формати</target>
+	</trans-unit>
 	</body>
 </file>
 </xliff>
